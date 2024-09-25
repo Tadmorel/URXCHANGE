@@ -1,0 +1,132 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;  /* Fondo suave gris claro */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #4574b1;  /* Azul oscuro */
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(129, 41, 41, 0.1);  /* Sombra sutil */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #c2dbff;  /* Color claro al pasar sobre el enlace */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    margin: 80px auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensajes de éxito o error */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Encabezados y texto */
+h1.display-4 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p.lead, p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo de los formularios */
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4477ba;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #135cbf;
+}
+
+/* Estilo para los botones de selección de universidades */
+.university-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #d86d3f;  /* Azul oscuro */
+    color: #fff;  /* Texto blanco */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;  /* Transición suave en el hover */
+}
+
+.university-buttons a:hover {
+    background-color: #cd9197;  /* Azul más oscuro en hover */
+}
+
+.university-buttons a:active {
+    background-color: #d78aa6;  /* Azul aún más oscuro al hacer clic */
+}
+
+

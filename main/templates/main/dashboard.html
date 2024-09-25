@@ -1,0 +1,42 @@
+<!-- main/templates/main/dashboard.html -->
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+
+    <h1 class="display-4">Bienvenido, {{ user.first_name }}!</h1>
+    <a href="{% url 'password_change' %}" class="btn btn-warning">Cambiar Contraseña</a>
+    <p class="lead">Esta es tu página de inicio.</p>
+    
+    <hr class="my-4">
+    <p>Aquí puedes acceder a recursos y guías sobre intercambios.</p>
+
+    {%if collab %}
+    <p class="lead">Como colaborador puedes publicar alojamientos, bancos y consejos en general.</p>
+
+        <form method="POST" action="">
+            {%csrf_token %}
+            <label for "id_title"> Título: </label>
+            {{post_form.title}}
+            <label for "id_description"> Descripción: </label>
+            {{post_form.description}}
+            {{post_form.university}}
+            <button type="submit"> Publicar </button>
+
+        </form>      
+    {%endif %}
+
+</div>
+<h2>Nuestra universidades</h2>
+<div class="university-buttons">
+    <a href="{%url 'la_salle' %}">La Salle</a>    
+    <a href="{%url 'anahuac' %}">Anahuac</a>
+    <a href="{%url 'tec' %}">Tecnológico de Monterrey</a>
+    <a href="{%url 'unam' %}">UNAM</a>
+    <a href="{%url 'ipn' %}">Instituto Politécnico Nacional</a>
+
+</div>
+
+{% endblock %}
+
+
